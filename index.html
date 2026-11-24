@@ -683,7 +683,7 @@
       // name: same tiers and wrapping as the on-screen card
       const name = (d.name || '').trim();
       const size = name.length > 26 ? 22 : (name.length > 16 ? 27 : 34);
-      const top = name.length > 16 && name.length <= 26 ? 370 : 372;
+      const top = name.length > 16 && name.length <= 26 ? 365 : 372;
       ctx.fillStyle = '#ffffff';
       ctx.textBaseline = 'top';
       ctx.font = '800 ' + size + "px 'Segoe UI', Roboto, Arial, sans-serif";
@@ -699,7 +699,7 @@
 
       // member since — sits under its own label on the left column now (photo circle took the old right slot)
       ctx.font = "800 27px 'Segoe UI', Roboto, Arial, sans-serif";
-      ctx.fillText(displayDate(d.tglGabung), 64, 479);
+      ctx.fillText(displayDate(d.tglGabung), 64, 470);
 
       // member id, centred under the QR box
       ctx.font = "700 26px 'Segoe UI', Roboto, Arial, sans-serif";
